@@ -1,0 +1,108 @@
+body {
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile .icons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.profile .icons img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    padding: 3px;
+    color: white;
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+.add-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    border-radius: 1px;
+    color: #888;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.add-profile-name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.manage-profiles {
+    margin-top: 50px;
+    padding: 10px 20px;
+    border: 2px solid #a7a7a7;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #a7a7a7;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.manage-profiles:hover {
+    background-color: white;
+    color: black;
+}
